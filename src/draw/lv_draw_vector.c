@@ -238,8 +238,8 @@ void lv_vector_path_append_rect(lv_vector_path_t * path, const lv_area_t * rect,
 {
     float x = rect->x1;
     float y = rect->y1;
-    float w = (float)lv_area_get_width(rect);
-    float h = (float)lv_area_get_height(rect);
+    float w = (float)lv_area_get_width(rect) - 1;
+    float h = (float)lv_area_get_height(rect) - 1;
 
     float hw = w * 0.5f;
     float hh = h * 0.5f;
